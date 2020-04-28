@@ -1,8 +1,8 @@
-<?php 
-require 'functions.php'
+<?php
+require 'functions.php';
 
-if(isset($_POST['tambah'])) {
-  if(tambah($_POST) > 0) {
+if (isset($_POST['tambah'])) {
+  if (tambah($_POST) > 0) {
     echo "<script>
             alert('data berhasil ditambahkan');
             document.location.href = 'latihan3.php';
