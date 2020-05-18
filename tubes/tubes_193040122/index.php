@@ -44,6 +44,22 @@
 
 <body style="background-color: pink;">
 
+
+ <nav>
+    <div class="nav-wrapper teal lighten-2">
+      <div class="container">
+      <a class="brand-logo">Foody </a>
+      <ul class="right hide-on-med-and-down">
+        <li> <a class="waves-effect waves-light btn-small pink lighten-3" href="php/login.php">
+       Login
+    </a></li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+    
+
+
      <div class="slider">
         <ul class="slides">
         
@@ -63,30 +79,46 @@
           </li>
         </ul>
       </div>
+
+      <section id="portfolio" class="portfolio scrollspy">
+        <div class="container">
+          <h3 class="light center grey-text text-darken-3">Portfolio</h3>
+          <div class="row">
+            <div class="col m3 s12">
+              <img src="assets/img/a.jpg" height="42" width="42" class="responsive-img materialboxed">
+            </div>
+            <div class="col m3 s12">
+              <img src="assets/img/b.jpg" class="responsive-img materialboxed">
+            </div>
+            <div class="col m3 s12">
+              <img src="assets/img/c.jpg" class="responsive-img materialboxed">
+            </div>
+            <div class="col m3 s12">
+              <img src="assets/img/d.jpg" class="responsive-img materialboxed">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col m3 s12">
+              <img src="assets/img/e.jpg" class="responsive-img materialboxed">
+            </div>
+            <div class="col m3 s12">
+              <img src="assets/img/f.jpg" class="responsive-img materialboxed">
+            </div>
+            <div class="col m3 s12">
+              <img src="assets/img/h.jpg" class="responsive-img materialboxed">
+            </div>
+            <div class="col m3 s12">
+              <img src="assets/img/g.jpg" class="responsive-img materialboxed">
+            </div>
+          </div>
+        </div>
+      </section>
+
       
 
- <nav>
-    <div class="nav-wrapper teal lighten-2">
-      <a class="brand-logo">Searching: </a>
-      <ul class="right hide-on-med-and-down">
-        <li> <a class="waves-effect waves-light btn-small pink lighten-3" href="php/login.php">
-       Login
-    </a></li>
-      </ul>
-    </div>
-  </nav>
-    
-     <nav>
-    <div class="nav-wrapper teal lighten-2">
-     <form action="" method="get">
-        <input type="text" name="keyword" autofocus>
-        <button class="waves-effect waves-light btn-small" type="submit" name="cari">Cari</button>
-    </form>
-    </div>
-  </nav>
    
 
-
+<h3 class="light center grey-text text-darken-3">Choose Your Food</h3>
 
 
     <?php if(empty($makanan)) : ?>
@@ -138,6 +170,10 @@
           transition: 600,
           interval: 3000
         });
+
+         const materialbox = document.querySelectorAll('.materialboxed')
+        M.Materialbox.init(materialbox);
+
       </script>
 
 </body>

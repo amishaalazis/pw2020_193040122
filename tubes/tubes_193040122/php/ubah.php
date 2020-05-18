@@ -54,6 +54,7 @@ if(!isset($_SESSION["username"])) {
   </nav>
         
 <form action="" method="post">
+     <div class="container">
     <input type="hidden" name="id" value="<?= $mkn['id']?>">
     <ul>
         <li>
@@ -84,6 +85,7 @@ if(!isset($_SESSION["username"])) {
             
         </li>
     </ul>
+     </div>
 </form>
 </body>
 </html>

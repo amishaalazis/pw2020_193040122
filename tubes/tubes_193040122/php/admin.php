@@ -46,24 +46,33 @@ if(isset($_GET['cari'])) {
     </style>
 </head>
 <body style="background-color: pink;">
-    
-    <div class="add">
-        <a class="waves-effect waves-light btn-small pink lighten-3" href="tambah.php">Tambah Data</a>
-    </div> 
-    <div class="logout">
-        <a class="waves-effect waves-light btn-small pink lighten-3" href="logout.php">Logout</a>
+<nav>
+    <div class="container">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Halaman Admin</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="waves-effect waves-light btn-small" href="tambah.php">Tambah Data</a></li>
+      </ul>
     </div>
+    </div>
+  </nav>
+
+
+    
+    
 
     <form action="" method="get">
+        <div class="container">
         <input type="text" name="keyword" autofocus>
         <button class="waves-effect waves-light btn" name="cari">Cari</button>
-        <button class="waves-effect waves-light btn" ><a href="../index.php" style="text-decoration : none; color : white;">Kembali</a></button>
+        <button class="waves-effect waves-light btn" ><a href="admin.php" style="text-decoration : none; color : white;">Kembali</a></button>
+    </div>
     </form>
 
    
 
-
     <table style="background-color: #42f5e0;" border="1" cellpadding ="13" cellspacing="0">
+        <div class="container">
         <tr>
             <th>#</th>
             <th>opsi</th>
@@ -99,7 +108,39 @@ if(isset($_GET['cari'])) {
             <?php $i++;?>
         <?php endforeach;?>
     <?php endif;?>
+</div>
     </table>
+
+
+    <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Food is Everything</h5>
+                <p class="grey-text text-lighten-4">You can choose whatever you like.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Makanan</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" >Sapi</a></li>
+                  <li><a class="grey-text text-lighten-3" >Ayam</a></li>
+                  <li><a class="grey-text text-lighten-3" >Kambing</a></li>
+                  <li><a class="grey-text text-lighten-3" >Ikan</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+             <div class="logout">
+        
+        <a class="waves-effect waves-light btn-small" href="logout.php">Logout</a>
+    </div>
+    
+            </div>
+          </div>
+        </footer>
+            
 
 </body>
 </html>

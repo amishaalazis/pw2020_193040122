@@ -72,7 +72,7 @@ if(isset($_POST['submit'])) {
 
     <title>Login</title>
 </head>
-<body style="background-color: #34eba1;">
+<body style="background-color: pink;">
 
     <nav>
     <div class="nav-wrapper">
@@ -80,12 +80,12 @@ if(isset($_POST['submit'])) {
 
     </div>
   </nav>
-
+  <div class="container">
     <form action="" method="post">
     <?php if (isset($error)) : ?>
         <p style="color : red; font-style : italic;">Username Atau Password salah</p>
     <?php endif; ?>
-    <table style="background-color: pink;">
+    <table>
         <tr>
             <td><label for="username">Username</label></td>
             <td>:</td>
@@ -111,6 +111,7 @@ if(isset($_POST['submit'])) {
 
     <div class="registrasi">
         <p>Belum punya akun? Registrasi <a href="registrasi.php">Disini</a> </p>
+    </div>
     </div>
 </form>
 

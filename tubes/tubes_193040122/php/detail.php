@@ -34,11 +34,13 @@ $makanan  = query("SELECT * FROM makanan WHERE id = $id")[0];
 <body style="background-color: pink;">
 
     <nav>
+    <div class="container">
     <div class="nav-wrapper">
       <a  class="brand-logo">   <?= $makanan['nama'] ?></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
       </ul>
     </div>
+  </div>
   </nav>
 <br>
     <div class="container">
@@ -52,8 +54,27 @@ $makanan  = query("SELECT * FROM makanan WHERE id = $id")[0];
             <p><?= $makanan['bahan_dasar'] ?></p>
         </div>
 
-       <a class="waves-effect waves-light btn"href="../index.php">Kembali</a>
+      
     </div>
     
+      <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Kembalikan Mood kamu dengan makan</h5>
+                <p class="grey-text text-lighten-4">Tapi jgn makan siang pas bulan puasa ya..</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            <a class="waves-effect waves-light btn"href="../index.php">Kembali</a>
+            </div>
+          </div>
+        </footer>
+
 </body>
 </html>

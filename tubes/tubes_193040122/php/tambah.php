@@ -50,6 +50,7 @@ if(!isset($_SESSION["username"])) {
   </nav>
 
 <form action="" method="post">
+     <div class="container">
     <ul>
         <li>
             <label for="nama">Nama: </label><br>
@@ -77,6 +78,7 @@ if(!isset($_SESSION["username"])) {
                 <a class="waves-effect waves-light btn" href="admin.php">Kembali</a>
         </li>
     </ul>
+</div>
 </form>
 </body>
 </html>

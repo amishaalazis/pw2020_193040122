@@ -44,6 +44,7 @@ if(isset($_POST["register"])) {
   </nav>
 
     <form action="" method="post">
+       <div class="container">
     <table>
         <tr>
             <td><label for="username">username</label></td>
@@ -58,6 +59,7 @@ if(isset($_POST["register"])) {
     </table>
     <button class="waves-effect waves-light btn" type="submit" name="register">REGISTER</button>
     <a class="waves-effect waves-light btn" href="login.php" style="text-decoration : none; color : white;">Kembali</a>
+  </div>
 </form>
 </body>
 </html>
